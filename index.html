@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Mahwish ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="heart-loader">
+            <div class="heart-inner"></div>
+        </div>
+        <p class="loader-text">Made with love for Mahwish ❤️</p>
+    </div>
+
+    <!-- Background Elements -->
+    <div id="particles-js"></div>
+    <div class="stars-container"></div>
+
+    <!-- Page 1: Introduction -->
+    <section id="page1" class="active">
+        <div class="glass-card">
+            <h2 class="subtitle-fade">To The Most Beautiful Girl...</h2>
+            <h1 class="main-title">Mahwish ❤️</h1>
+            <p class="description">"This isn't just a website... <br> It's every feeling I couldn't explain in words."</p>
+            <button class="btn-primary" onclick="nextPage(2)">
+                <span>Continue</span>
+                <div class="btn-heart">❤️</div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Page 2: The Apology -->
+    <section id="page2">
+        <div class="glass-card typewriter-container">
+            <div id="typewriter-text" class="hinglish-text"></div>
+            <button class="btn-primary" id="btn-after-type" onclick="nextPage(3)" style="display:none;">Open My Heart</button>
+        </div>
+    </section>
+
+    <!-- Page 3: The Envelope -->
+    <section id="page3">
+        <div class="envelope-wrapper" onclick="openLetter()">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="body"></div>
+                <div class="letter">
+                    <div class="letter-content">
+                        <h3>Mahwish...</h3>
+                        <p>Main perfect nahi hoon. Galtiyan mujhse hui hain. Lekin ek baat kabhi nahi badlegi.</p>
+                        <p>Main har din tumhe choose karunga. Har baar. Har situation me.</p>
+                        <p>I love you. And I am truly sorry.</p>
+                        <p class="signature">- Arham ❤️</p>
+                    </div>
+                </div>
+            </div>
+            <p class="tap-hint">Tap to open</p>
+        </div>
+        <button class="btn-primary" id="btn-after-letter" onclick="nextPage(4)" style="display:none; margin-top: 50px;">Forgive Me?</button>
+    </section>
+
+    <!-- Page 4: Question -->
+    <section id="page4">
+        <div class="glass-card">
+            <h1 class="question-text">Will You Forgive Me?</h1>
+            <div class="btn-group">
+                <button class="btn-forgive" onclick="celebrate()">❤️ I Forgive You</button>
+                <button class="btn-reject" id="noBtn">💔 I Won't Forgive You</button>
+            </div>
+            <p id="rejection-msg" class="cute-msg"></p>
+        </div>
+    </section>
+
+    <!-- Page 5: Thank You -->
+    <section id="page5">
+        <div class="glass-card">
+            <h1 class="main-title">Thank you...</h1>
+            <p class="description">Thank you for giving our love another chance. <br><br> I promise... <br> I'll protect your heart better this time.</p>
+            <button class="btn-primary" onclick="nextPage(6)">Next</button>
+        </div>
+    </section>
+
+    <!-- Page 6: Night Sky -->
+    <section id="page6">
+        <div class="night-sky">
+            <div class="moon"></div>
+            <div class="shooting-stars"></div>
+            <div class="sky-text">
+                <h2>Long Distance...</h2>
+                <p>Sirf maps pe hoti hai. <br> Dilon me nahi.</p>
+            </div>
+            <button class="btn-primary" onclick="nextPage(7)">Final Message</button>
+        </div>
+    </section>
+
+    <!-- Page 7: Final -->
+    <section id="page7">
+        <div class="final-container">
+            <div class="names">Arham ❤️ Mahwish</div>
+            <div class="one-day">One Day... <br> No Distance. <br> Just Us. <br> Forever.</div>
+            <div class="heart-interaction" onclick="finalGlow(this)">
+                <div class="big-heart">❤️</div>
+                <p>Touch My Heart ❤️</p>
+            </div>
+            <div id="final-words" class="final-reveal"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
